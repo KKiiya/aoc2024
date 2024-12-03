@@ -20,7 +20,7 @@ def similarityScore():
         times = 0
         for rightValue in rightValues: 
             if leftValue == rightValue: times += 1
-        score = score + leftValue*times
+        score += leftValue*times
     return score
 
 initializeInput(file)
