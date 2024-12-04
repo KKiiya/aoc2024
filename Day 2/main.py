@@ -32,11 +32,12 @@ def checkSafeReports():
         if difference > 0: decreasing = True
         # print(str(decreasing) + " " + str(report))
 
+        safe = False
         for j in range(2, len(report)):
             if decreasing and firstReportValue >= report[j]: break
             elif (not decreasing) and firstReportValue <= report[j]: break
-            if (report[j-1] == report[j]): break
-            tempSafeReports.append(report)
+            safe = True
+        if safe: tempSafeReports.append(report)
         
     for i in range(0, len(tempSafeReports)):
         report = tempSafeReports[i]
