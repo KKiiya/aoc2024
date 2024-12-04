@@ -15,7 +15,6 @@ def initializeInput(file):
 def isSafe(report):
     for i in range(len(report) - 1):
         diff = abs(report[i+1] - report[i])
-        if diff is 0: return False
         if diff not in [1, 2, 3]: return False
     return True
 
