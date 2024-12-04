@@ -45,7 +45,7 @@ def checkSafeReports():
     for i in range(0, len(tempSafeReports)):
         report = tempSafeReports[i]
         if isSafe(report): 
-            print(report)
+            #print(report)
             safeReports += 1
     return safeReports
 
